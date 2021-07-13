@@ -7,3 +7,9 @@ Autoregressive Integrated Moving Average (ARIMA) is one of the most widely used 
 ARIMA supports both an autoregressive and moving average elements. The integrated element refers to differencing allowing the method to support time series data with a trend. A problem with ARIMA is that it does not support seasonal data. That is a time series with a repeating cycle.
 
 SARIMA or Seasonal ARIMA, is an extension of ARIMA that explicitly supports univariate time series data with a seasonal component. It adds three new hyperparameters to specify the autoregression (AR), differencing (I) and moving average (MA) for the seasonal component of the series, as well as an additional parameter for the period of the seasonality.
+
+The parameters of the SARIMA model are defined as follows:
+
+    p: The number of lag observations included in the model, also called the lag order.
+    d: The number of times that the raw observations are differenced, also called the degree of differencing.
+    q: The size of the moving average window, also called the order of moving average.
